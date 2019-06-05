@@ -22,10 +22,9 @@ include_once'includes/menu.php';
 			?> 
 
 			<div class="card" align="center">
-				<h5 class="card-header"> Entrega Para fazer ! </h5>
+				<h5 class="card-header"><?php echo $dados['titulo']; ?></h5>
 				<div class="card-body">
-					<h5 class="card-title"><?php echo $dados['titulo']; ?></h5>
-					<p class="card-text"><?php echo $dados['conteudo']; ?></p>
+					<h6 class="card-text"><?php echo $dados['conteudo']; ?></h6>
 
 					<a href="editarEntregas.php?id= <?php echo $dados['id']; ?>" class="btn btn-primary">Editar</a>
 					<button type="button" href="<?php echo $dados['id']; ?>" class="btn btn-danger" data-toggle="modal" data-target="#modal<?php echo $dados['id']; ?>">

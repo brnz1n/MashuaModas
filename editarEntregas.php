@@ -14,9 +14,10 @@ $resultado = mysqli_query($connect, $sql);
 $dados = mysqli_fetch_array($resultado);
 ?>
 
-<div class="container rounded-lg" style="background-color: #FBFBFB">
+<div class="container rounded-lg" style="background-color: #F5F5F5">
   <div>
     <div class="titulo" align="center">
+      <br>
       <h3> Editar Entregas</h3>
     </div>
     <form action="php_action/updateEntregas.php" method="POST">
@@ -31,7 +32,7 @@ $dados = mysqli_fetch_array($resultado);
       </div>
       <div>
         <label>Messagem</label>
-        <textarea type="text" class="form-control" name="conteudo"  placeholder="Messagem"
+        <textarea type="text" class="form-control" name="conteudo" rows="6"  placeholder="Messagem"
         ><?php echo $dados['conteudo']; ?></textarea>
         <br>
       </div>
@@ -40,6 +41,7 @@ $dados = mysqli_fetch_array($resultado);
         <a href="entregas.php" class="btn btn-dark">Volta</a>
       </div>
     </form>
+    <br>
   </div>
 </div>
 

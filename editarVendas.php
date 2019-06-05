@@ -14,9 +14,10 @@ $resultado = mysqli_query($connect, $sql);
 $dados = mysqli_fetch_array($resultado);
 ?>
 
-<div class="container rounded-lg" style="background-color: #FBFBFB">
+<div class="container rounded-lg" style="background-color: #F5F5F5">
   <div>
     <div class="titulo" align="center">
+      <br>
       <h3> Editar Vendas</h3>
     </div>
     <form action="php_action/updateVendas.php" method="POST">
@@ -46,6 +47,7 @@ $dados = mysqli_fetch_array($resultado);
         <a href="vendas.php" class="btn btn-dark">Volta</a>
       </div>
     </form>
+    <br>
   </div>
 </div>
 
