@@ -5,11 +5,10 @@ include_once 'includes/header.php';
 include_once'includes/menu.php';
 
 ?>
-
 <div class="container rounded-lg" style="background-color: #FBFBFB">
   <div>
     <div class="titulo" align="center">
-      <h3> Novo Produto </h3>
+      <h3> Nova Entrega</h3>
     </div>
     <form action="php_action/createEntregas.php" method="POST">
       <div>

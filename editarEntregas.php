@@ -8,12 +8,10 @@ include_once'includes/menu.php';
 //Select
 if (isset($_GET['id']));
 $id = mysqli_escape_string($connect, $_GET['id']);
-
 $sql = "SELECT * FROM entregas WHERE id = '$id'";
 $resultado = mysqli_query($connect, $sql);
 $dados = mysqli_fetch_array($resultado);
 ?>
-
 <div class="container rounded-lg" style="background-color: #F5F5F5">
   <div>
     <div class="titulo" align="center">
@@ -44,7 +42,6 @@ $dados = mysqli_fetch_array($resultado);
     <br>
   </div>
 </div>
-
 <!--footer-->
 <?php
 include_once 'includes/footer.php';

@@ -5,21 +5,20 @@ include_once 'php_action/db_connect.php';
 include_once 'includes/header.php';
 //menu
 include_once'includes/menu.php';
-
 ?>
 <div class="col-12 col-md-auto">
-	<div align="center">
-		<h3>Vendas</h3>
-		<a class="btn btn-success" href="adicionarVendas.php">Adicionar Vendas</a>
-		<br><br>
+	<div class="card" align="center">
+		<h3 class="card-header">Vendas Efetuadas</h3>
+		<a class="btn btn-success" href="adicionarVendas.php">Adicionar</a>
 	</div>
+	<br><br>
 	<div class="table-responsive">
 		<table class="table table-hover table-bordered table-striped">
 			<thead class="bg-success" style="color: white;">
-				<tr>
+				<tr align="center">
 					<th scope="col">Nome</th>
 					<th scope="col">Quantidade</th>
-					<th scope="col">Valor Venda</th>
+					<th scope="col">V. Venda</th>
 					<th scope="col"></th>
 					<th scope="col"></th>
 				</tr>
@@ -30,10 +29,10 @@ include_once'includes/menu.php';
 				$resultado = mysqli_query($connect, $sql);
 				while ($dados = mysqli_fetch_array($resultado)):
 					?>
-					<tr>  
+					<tr align="center">  
 						<td> <?php echo $dados['nome']; ?></td>
 						<td> <?php echo $dados['quantidade']; ?></td>
-						<td> <?php echo $dados['valorVenda']; ?></td>
+						<td> <?php echo $dados['valorVenda'].'.00'; ?></td>
 						<td><a href="editarVendas.php?id= <?php echo $dados['id']; ?>" class="btn btn-primary">Editar</a></td>
 						<td><button type="button" href="<?php echo $dados['id']; ?>" class="btn btn-danger" data-toggle="modal" data-target="#modal<?php echo $dados['id']; ?>">
 							Apagar
@@ -67,7 +66,8 @@ include_once'includes/menu.php';
 		</table>
 	</div>
 </div>
-
+<!--Footer-->
 <?php 
 include_once 'includes/footer.php';
 ?>
+<!--Footer-->

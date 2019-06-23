@@ -14,7 +14,7 @@
     <footer class="page-footer font-small " style="background-color: #ca1466">
 
       <!-- Copyright -->
-      <div class="footer-copyright text-center py-3" style="color: white">© 2019 Copyright:
+    <div class="footer-copyright text-center py-3" style="color: white">© 2019 Copyright:
         <a href="https://www.instagram.com/mashuamodas/" style="color: white"> Mashuá Modas</a>
     </div>
     <!-- Copyright -->

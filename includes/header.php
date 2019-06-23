@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="pt">
 <head>
+  <link rel="stylesheet" type="text/css" href="css/all.css">
+  
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -28,7 +30,7 @@
 
   <title>Mashua Modas</title>
 </head>
-<body >
+<body style="background-color:  #F0F8FF">
 	<div class="logo" align="center">
     <a href="index.php"><img src="img/Logo Mashuá.png" height="250px", width="250px" style="margin-bottom: -20px; margin-top: -20px"></a>
   </div>

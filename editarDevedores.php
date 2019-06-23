@@ -8,17 +8,16 @@ include_once'includes/menu.php';
 //Select
 if (isset($_GET['id']));
 $id = mysqli_escape_string($connect, $_GET['id']);
-
+//Faz o Select do banco de dados
 $sql = "SELECT * FROM devedores WHERE id = '$id'";
 $resultado = mysqli_query($connect, $sql);
 $dados = mysqli_fetch_array($resultado);
 ?>
-
 <div class="container rounded-lg" style="background-color: #F5F5F5">
   <div>
     <div class="titulo" align="center">
       <br>
-      <h3> Editar Estoque</h3>
+      <h3>Editar Devedor</h3>
     </div>
     <form action="php_action/updateDevedor.php" method="POST">
       <div>
@@ -55,7 +54,6 @@ $dados = mysqli_fetch_array($resultado);
     <br>
   </div>
 </div>
-
 <!--footer-->
 <?php
 include_once 'includes/footer.php';

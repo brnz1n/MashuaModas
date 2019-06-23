@@ -3,9 +3,7 @@
 include_once 'includes/header.php';
 //Menu
 include_once'includes/menu.php';
-
 ?>
-
 <div class="container rounded-lg" style="background-color: #FBFBFB">
   <div>
     <div class="titulo" align="center">
@@ -36,11 +34,9 @@ include_once'includes/menu.php';
         <button type="submit" name="btn-cadastrar" class="btn btn-primary">Cadastrar</button>
         <a href="index.php" class="btn btn-dark">Volta</a>
       </div>
-
     </form>
   </div>
 </div>
-
 <!--footer-->
 <?php
 include_once 'includes/footer.php';
